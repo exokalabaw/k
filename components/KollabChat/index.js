@@ -16,7 +16,7 @@ const KollabChat = () =>{
     const renderItem = ({ item}) => (
         <View style={[styles.chatrow, item.name === 'Kanan'? styles.chatright:styles.chatleft]}>
              <Image style={[styles.chatboximage,item.name === 'Kanan'? styles.chatimageright:styles.chatimageleft]} source={item.image}/>
-             <Text style={styles.chatboxbubble}>{item.message}</Text>
+             <Text style={[styles.chatboxbubble, styles.fieldshadow]}>{item.message}</Text>
        </View>
       );
     
